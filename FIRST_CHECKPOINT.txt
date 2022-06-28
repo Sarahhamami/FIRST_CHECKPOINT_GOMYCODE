@@ -1,0 +1,50 @@
+algorithm FIRST_TASK
+var sentence: string ;
+vowels: string;
+nbv:integer ; 
+i:integer ;
+j:integer;
+begin
+sentence:="sarah hammami.";
+vowels:= "aeiouy";
+nbv:=0;
+i:=0;
+j:=0;
+while (sentence[i]!=".") do
+
+    if (sentence[i]=" ") then
+      nbw:=nbw+1;
+    END_IF
+    for j from 0 to vowels.length-1 STEP 1 DO 
+        if (sentence[i]=vowels[j])then
+            nbv:=nbv+1;
+        END_IF
+    END_FOR
+    i++;
+    
+END_WHILE
+i++;
+write(nbw);
+write(nbv);
+
+END
+////////////////////
+algorithm SECOND_TASK
+var set1: array_of integer[4];
+set2: array_of integer[5];
+i:integer;
+j:integer;
+
+begin
+set1:= {3, 1, 7, 9};
+ set2:={2, 4, 1, 9, 3};
+for i from 0 to  4  STEP 1 do 
+for j from 0 to 5 SETP 1 do 
+	if (set1[i]!=set2[j])then
+		sum:=sum+1;
+	END_IF
+end_for
+
+write(sum);
+
+END
